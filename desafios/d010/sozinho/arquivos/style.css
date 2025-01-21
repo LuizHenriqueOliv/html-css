@@ -1,0 +1,158 @@
+@charset 'UTF-8';
+/*Configurações da fonte*/
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Configurações do header*/
+header{
+    background-image: linear-gradient(to bottom, green, darkgreen);
+    color: white;
+    height: 185px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+}
+
+header > h1{
+    padding-top: 30px;
+    text-align: center;
+}
+
+header > p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+menu {
+    padding-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+menu > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+menu > a:hover {
+    background-color: darkgreen;
+    transition: 0.2s;
+}
+
+/*Configurações da main*/
+main {
+    background-color: rgba(0, 128, 0, 0.587)
+}
+
+#container{
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+.especial::after{
+    content: ' ' url(imagens/corrente.png);
+}
+
+.titulo, .subtitulo{
+    font-family: 'idroid', sans-serif;
+    color: green;
+}
+.titulo{
+    margin: 20px;
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 2em;
+}
+.subtitulo{
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 0.303), white);
+    padding-left: 5px;
+}
+p {
+    text-indent: 20px;
+    margin: 10px 20px;
+}
+
+h2, h4, p {
+    margin: 20px;
+}
+
+
+
+#img-bugdroid{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#container-video{
+    background-color: rgb(0, 65, 0);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+}
+#video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.46);
+}
+
+/*configuração da parte extra*/
+#container-extra{
+    background-color: rgba(0, 255, 255, 0.238);
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+#titulo-extra{
+    background-color: rgba(0, 128, 0, 0.755);
+    color:white;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+h4{
+    margin-bottom: 0;
+}
+
+#caixa{
+    display: flex;
+    gap: 130px;
+}
+
+ul {
+    list-style: none;
+}
+li::before{
+    content: '✔ ';
+}
+
+
+/*configuração do rodapé*/
+footer {
+    background-color: darkgreen;
+    text-align: center;
+    padding: 1px;
+    color: white;
+}
