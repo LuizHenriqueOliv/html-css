@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,32 @@
             padding: 10px;
         }
 
+        /*Efeito de cabeçalho fixo*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(87, 86, 86);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+            font-weight: bold;
+        }
+        
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }        
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(87, 86, 86);
             color: white;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td.num{
@@ -43,10 +67,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -77,10 +102,18 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>122.420.654</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore odit expedita tempora dolore. Omnis, labore recusandae culpa sunt animi asperiores, neque autem ex placeat, expedita iure aspernatur nam cupiditate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, odio placeat quidem eveniet tenetur facilis sint. Aperiam ipsa aut saepe quam, rerum tempora modi? Sunt pariatur alias rem? Est, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima sapiente iusto fuga? Excepturi consequatur reprehenderit fugit, non assumenda, odio molestias at perspiciatis culpa, rem soluta in officia iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quo obcaecati minus deleniti, ea optio nemo quidem vero? Doloremque cum nihil ad sequi ea soluta sint aspernatur, officia hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio! Rerum commodi soluta fuga sapiente ut cumque. Officiis odit amet rerum praesentium sunt corporis temporibus nihil commodi! Vel, aut perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae fuga eaque reiciendis quisquam ipsa libero id possimus. Hic, impedit ab! Minima qui esse quisquam error ducimus earum laborum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, tempore dignissimos possimus impedit rem iure eligendi quos sunt expedita eius tenetur repellendus, harum distinctio odit dicta tempora! Illum, quasi?</p>
 </body>
 </html>
