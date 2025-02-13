@@ -19,22 +19,36 @@
             
         }
 
+        /* 
+        !!! Shorthand !!!
+        flex: grow + shrink + basis; 
+
+        Flex: 0 1 auto; ou Flex: initial; (padrão)
+        flex: 0 0 auto; ou Flex: none (nada flexível)
+        flex: 1 1 auto; ou Flex: auto (mega flexível) 
+        */
         div#cxA {
-            flex-shrink: 0;
+            /*flex-shrink: 0;
             flex-grow: 1;
-            flex-basis: 200px;
+            flex-basis: 200px;*/
+
+            flex: 1 0 200px;
         }
 
         div#cxB {
-            flex-shrink: 1;
+           /* flex-shrink: 1;
             flex-grow: 1;
-            flex-basis: 200px;
+            flex-basis: 150px; */
+
+            flex: 1 1 150px;
         }
 
         div#cxC {
-            flex-shrink: 8;
+            /*flex-shrink: 8;
             flex-grow: 1;
-            flex-basis: 200px;
+            flex-basis: auto;*/
+
+            flex: 8 1 auto;
         }
     </style>
 </head>
